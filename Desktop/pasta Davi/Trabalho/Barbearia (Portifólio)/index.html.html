@@ -1,0 +1,318 @@
+<!DOCTYPE html>
+<html lang="pt-br" >
+<head>
+<link href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Oswald:wght@400;600&display=swap" rel="stylesheet">
+
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Portfólio | Gilliard Andrade</title>
+    <style>
+
+        html {
+  scroll-behavior: smooth;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Poppins', sans-serif;
+            line-height: 1.6;
+            background-image: url(https://media.discordapp.net/attachments/1400043877062414348/1401321543241306284/Wallpaper.png?ex=688fd9e3&is=688e8863&hm=0504dae1354547ab7b1c000704187f042f8d908ba506b1fdc3da5a5313434b41&=&format=webp&quality=lossless&width=570&height=856);
+            background-repeat: repeat;
+            background-size: auto;
+            color: #f7f7f7;
+        }
+
+        header {
+            background-color: #222;
+            color: #fff;
+            padding: 30px 20px;
+            text-align: center;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 20px;
+            flex-wrap: wrap;
+        }
+
+        header img.logo {
+            width: 120px;
+            height: 120px;
+            border-radius: 50%;
+            object-fit: cover;
+        }
+
+        header h1 {
+            font-family: 'Oswald', sans-serif;
+            font-size: 3em;
+            letter-spacing: 1px;
+            font-weight: 600;
+        }
+
+        nav {
+            background: #333;
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+        }
+
+        nav a {
+            color: white;
+            padding: 15px 20px;
+            text-decoration: none;
+        }
+
+        nav a:hover {
+            background: #555;
+        }
+
+        .container {
+            max-width: 1000px;
+            margin: auto;
+            padding: 20px;
+        }
+
+        section {
+            margin-bottom: 40px;
+        }
+
+        h2 {
+            color: #f7f7f7;
+            margin-bottom: 15px;
+        }
+
+        .project, .feedback {
+            background: rgb(0, 0, 0);
+            padding: 15px;
+            border-left: 5px solid #6d00ff;
+            margin-bottom: 15px;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+        }
+
+        .sobre-container {
+            display: flex;
+            flex-wrap: wrap;
+            align-items: center;
+            gap: 20px;
+        }
+
+        .sobre-container img {
+            max-width: 300px;
+            width: 100%;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+        }
+
+        .sobre-texto {
+            flex: 1;
+            min-width: 250px;
+        }
+
+        .grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 15px;
+        }
+
+        .grid img {
+            width: 100%;
+            border-radius: 8px;
+            transition: transform 0.3s ease;
+        }
+
+        .grid img:hover {
+            transform: scale(1.05);
+        }
+
+        iframe {
+            width: 100%;
+            height: 300px;
+            border: 0;
+            border-radius: 8px;
+        }
+
+        footer {
+            background: #222;
+            color: white;
+            text-align: center;
+            padding: 15px;
+            margin-top: 40px;
+        }
+
+        @media (max-width: 600px) {
+            header h1 {
+                font-size: 2em;
+            }
+
+            nav {
+                flex-direction: column;
+            }
+
+            nav a {
+                border-top: 1px solid #444;
+            }
+
+            .star-rating {
+                display: flex;
+                gap: 10px;
+                font-size: 2.2em;
+                color: #ffc400;
+                cursor: pointer;
+                justify-content: center;
+            }
+
+            .star-rating .star:hover,
+            .star-rating .star.hovered,
+            .star-rating .star.selected {
+              color: rgb(221, 188, 0);
+              transition: color 0.2s ease;
+            }
+
+        }
+    </style>
+</head>
+
+    <header>
+        <img src="C:\Users\night\Desktop\pasta Davi\Trabalho\Barbearia (Portifólio)\Logo\logo.png" alt="Logo Gilliard Studio" class="logo">
+        <div>
+            <h1>Gilliard Studio</h1>
+<body>
+            <p>Hair Design | Beard Design | Hair Stylist</p>
+            <p>Rua Sebastião Silvério Duarte, 252 Serrana-SP</p>
+        </div>
+    </header>
+
+    <nav>
+        <a href="#sobre">Sobre</a>
+        <a href="#projetos">Projetos</a>
+        <a href="#galeria">Galeria</a>
+        <a href="#feedback">Feedback</a>
+        <a href="#localizacao">Localização</a>
+        <a href="#contato">Contato</a>
+    </nav>
+
+    <div class="container">
+
+        <section id="sobre" data-aos="fade-up">
+            <h2>Sobre Mim</h2>
+            <div class="sobre-container">
+                <img src="C:\Users\night\Desktop\pasta Davi\Trabalho\Barbearia (Portifólio)\components\Gilliard.png" alt="Foto de Gilliard Andrade">
+                <div class="sobre-texto">
+                    <div class="project" data-aos="zoom-in">
+                    <h2><p>Olá, pessoal!</p></h2> 
+                    <p>Sou <strong>Gilliard Andrade</strong>, barbeiro e hair stylist com 5 anos de experiência no ramo.</p>
+                    <p>Minha missão é transformar visuais e elevar a autoestima dos meus clientes com profissionalismo, estilo e respeito à individualidade de cada um.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="projetos" data-aos="fade-up">
+            <h2>Projetos Recentes</h2>
+            <div class="project" data-aos="zoom-in">
+                <h3>Low-Fade — V style</h3>
+                <p>Corte low fade com acabamento em V na nuca e design artístico personalizado.</p>
+            </div>
+            <div class="project" data-aos="zoom-in">
+                <h3>American Cut</h3>
+                <p>Corte clássico com laterais mais baixas e topo alinhado, ideal para um visual limpo e versátil.</p>
+            </div>
+            <div class="project" data-aos="zoom-in">
+                <h3>Mullet Cut</h3>
+                <p>Estilo retrô e ousado com nuca longa, topo volumoso e laterais curtas.</p>
+            </div>
+        </section>
+
+        <section id="galeria" data-aos="fade-up">
+            <h2>Galeria de Cortes</h2>
+            <div class="grid">
+                <img src="C:\Users\night\Desktop\pasta Davi\Trabalho\Barbearia (Portifólio)\Produtos\corte1.png" alt="Low Fade">
+                <img src="C:\Users\night\Desktop\pasta Davi\Trabalho\Barbearia (Portifólio)\Produtos\corte3.png" alt="American Cut">
+                <img src="C:\Users\night\Desktop\pasta Davi\Trabalho\Barbearia (Portifólio)\Produtos\corte2.png" alt="Mullet">
+            </div>
+        </section>
+
+        <section id="feedback" data-aos="fade-up">
+
+            <section id="avaliacao" data-aos="fade-up">
+                <h2>Deixe sua avaliação</h2>
+                <div class="star-rating">
+                  <span class="star" data-value="1">&#9733;</span>
+                  <span class="star" data-value="2">&#9733;</span>
+                  <span class="star" data-value="3">&#9733;</span>
+                  <span class="star" data-value="4">&#9733;</span>
+                  <span class="star" data-value="5">&#9733;</span>
+                </div>
+                <p id="rating-result" style="margin-top:10px;"></p>
+              </section>
+
+            <h2>Feedback dos Clientes</h2>
+            <div class="feedback">
+                <p><b>Davi K.:</b> "Atendimento excelente e corte impecável. Cliente fiel há anos!"</p>
+            </div>
+            <div class="feedback">
+                <p><b>Luis G.:</b> "Trabalho perfeito e muito veloz! Voltarei mais vezes."</p>
+            </div>
+        </section>
+
+        <section id="localizacao" data-aos="fade-up">
+            <h2>Onde Estamos</h2>
+            <iframe src="https://www.google.com/maps/embed?pb=!4v1754160813362!6m8!1m7!1sTWC3G7tzNR2xDbvcsEX-sQ!2m2!1d-21.20713429056966!2d-47.6160717809682!3f227.21155052538387!4f-9.266670040295935!5f0.7820865974627469" allowfullscreen loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </section>
+
+        <section id="contato" data-aos="fade-up">
+        <summary> <h2>Contato</h2> </summary>
+        <details>    
+            <div class="project" data-aos="zoom-in">
+        <p>📧 Email: gilliardstudio@email.com</p>
+            <p>📱 WhatsApp: (16) 99143-4376</p>
+            <p>📸 Instagram: <a href="https://www.instagram.com/gi_barbeiro/" target="_blank">instagram.com/gi_barbeiro/</a></p>
+            </div>
+        </details>
+        </section>
+
+    </div>
+
+    <footer>
+        <p>&copy; 2025 Gilliard Studio © | Todos os direitos reservados</p>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+    <script>
+      AOS.init();
+  const stars = document.querySelectorAll('.star');
+  const result = document.getElementById('rating-result');
+
+  stars.forEach((star) => {
+    star.addEventListener('mouseover', () => {
+      stars.forEach((s) => s.classList.remove('hovered'));
+      const val = parseInt(star.getAttribute('data-value'));
+      for (let i = 0; i < val; i++) {
+        stars[i].classList.add('hovered');
+      }
+    });
+
+    star.addEventListener('mouseout', () => {
+      stars.forEach((s) => s.classList.remove('hovered'));
+    });
+
+    star.addEventListener('click', () => {
+      const selectedValue = parseInt(star.getAttribute('data-value'));
+      stars.forEach((s) => s.classList.remove('selected'));
+      for (let i = 0; i < selectedValue; i++) {
+        stars[i].classList.add('selected');
+      }
+      result.textContent = `Obrigado pela sua avaliação: ${selectedValue} estrela(s)!`;
+    });
+  });
+</script>
+
+    </script>
+
+</body>
+</html>
